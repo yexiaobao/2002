@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>按钮</button>
+    <script>
+        init();
+
+        function init(){
+            var bn=document.querySelector("button");
+            bn.onclick=clickHandler;
+
+        }
+
+        function clickHandler(e){
+            var div=document.createElement("div");
+            div.style.width=div.style.height=Math.floor(Math.random()*
+            80+20)+"px";
+            div.style.backgroundColor=randomColor();
+            div.style.position="absolute";
+            div.style.left=Math.floor(Math.random()*1000)+"px";
+            div.style.top=Math.floor(Math.random()*600)+"px";
+            document.body.appendChild(div);
+        }
+
+        function randomColor(){
+            var col="#";
+            for(var i=0;i<6;i++){
+                col+=Math.floor(Math.random()*16).toString(16);
+
+            }
+            return col;
+        }
+    </script>
+</body>
+</html>
