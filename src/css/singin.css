@@ -1,0 +1,151 @@
+
+*{margin:0;padding:0;
+    box-sizing: border-box;}
+    li{list-style:none;}
+    a,u,ins{text-decoration: none;}
+    img{border:0; display:block;/* display:block; 解决图片默认三像素的空隙问题 */}
+    h1,h2,h3,h4,h5,h6{font-weight: normal;}
+    body{font:12px "微软雅黑";}
+    em,i{font-style: normal;}
+    strong,b{font-weight: normal;}
+    input{outline: none;}
+
+.headerwarp{
+    width: 100%;
+    height: 56px;
+    margin-top: 20px;
+}
+.header{
+    width: 1200px;
+    height: 56px;
+    margin: auto;
+    border-bottom: 1px solid #e0e0e1;
+}
+
+/* 注册主体 */
+.cententWarp{
+    width: 100%;
+    height: 590px;
+}
+
+.centent {
+    width: 1200px;
+    height: 547px;
+    margin: auto;
+}
+.centent li{
+    width: 600px;
+    float: left;
+    margin-top: 40px;
+    /* background-color: antiquewhite; */
+   
+}
+
+
+.zhuce p{
+    width: 415px;
+    height: 37px;
+    /* background-color: aqua; */
+    line-height: 37px;
+    font-size: 20px;
+    color: #a2a2a2;
+    text-align: center;
+    margin-left: 100px;
+}
+.zhuce p span{
+    margin-left: 170px;
+    font-size: 14px;
+}
+.zhuce p em{
+    color: #b42025;
+    font-weight: bold;
+}
+/* input */
+.verify{
+    margin-left: 90px;
+    /* background-color: bisque; */
+}
+.verify .inpputs input{
+    width: 262px;
+    height: 45px;
+}
+.inpputs:nth-child(1){
+    margin-top: 20px;
+}
+
+.verify input{
+    width: 415px;
+    height: 45px;
+    margin: 10px;
+}
+ .inpputs button{
+    width: 140px;
+    height: 45px;
+    margin-left: 3px;
+}
+.inpputs button:nth-child(2){
+    color: #b42025;
+}
+
+.verify input:nth-child(0){
+    width: 262px;
+    height: 45px;
+} 
+.chenck input{
+    width: 13px;
+    height: 13px;
+}
+.chenck{
+    font-size: 14px;
+    color: #9d9d9d;
+}
+.chenck span{
+    color: #b42025;
+}
+.liji button{
+    width: 415px;
+    height: 45px;
+    margin-left: 10px;
+    border: none;
+    background-color: #9d9d9d;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.list img{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.footwarp{
+    width: 100%;
+    height: auto;
+
+}
+.foot{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    border-top: 1px solid #7a7f89;
+  
+}
+.foot p{
+    width: 980px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #999999;
+    margin: 20px 110px;
+}
+.foot span {
+    display: block;
+    width: 980px;
+    text-align: center;
+    margin-left: 340px;
+}
+.foot span img{
+    height: 45px;
+    float: left;
+    margin-right: 15px;
+   margin-bottom: 20px;
+
+}

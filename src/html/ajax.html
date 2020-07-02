@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">请求数据</button>
+    <div id="show">
+
+    </div>
+
+    <script>
+
+        // btn.onclick=function(){
+        //     var xhr=new XMLHttpRequest();
+        //     xhr.open("get","../data/test.txt?_="+Date.now(),true);
+        //     xhr.send(null);
+
+        //     xhr.onreadystatechange=function(){
+        //         if(xhr.readyState==4){
+        //             if(xhr.status>=200 && xhr.status<300){
+        //                 show.innerText=xhr.responseText;
+
+        //             }
+        //             else{
+        //                 console.log("请求失败")
+        //             }
+
+        //         }
+        //     }
+        // }
+
+
+        btn.onclick=function(){
+            var xhr=new XMLHttpRequest();
+            xhr.open("get","../data/test.json?_="+Date.now(),true);
+            xhr.send(null);
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4){
+                    if(xhr.status>=200  && xhr.status<300){
+                        var json=JSON.parse(xhr.responseText);
+                        for(var i=0,len = json.length; i < len; i++){
+                            show.innerHTML += '<p>书名：'+json[i].books+'，作者：'+json[i].author+'，出版年份：'+json[i].year+'，售价：'+json[i].price+'</p>';
+                        }
+                        
+                    }
+                    else{
+                            console.log("失败")
+                        }
+                }
+            }
+        }
+       
+
+
+        var div=document.createElement("div");
+        
+        div.style.width="50px";
+        div.style.height="50px";
+        div.style.color="red";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+*{margin:0;padding:0;
+    box-sizing: border-box;}
+    li{list-style:none;}
+    a,u,ins{text-decoration: none;}
+    img{border:0; display:block;/* display:block; 解决图片默认三像素的空隙问题 */}
+    h1,h2,h3,h4,h5,h6{font-weight: normal;}
+    body{font:12px "微软雅黑";}
+    em,i{font-style: normal;}
+    strong,b{font-weight: normal;}
+    input{outline: none;}
+
+.headerwarp{
+    width: 100%;
+    height: 56px;
+    margin-top: 20px;
+}
+.header{
+    width: 1200px;
+    height: 56px;
+    margin: auto;
+    border-bottom: 1px solid #7a7f89;
+}
+.header p{
+    line-height: 56px;
+    margin-top: -40px;
+    margin-left: 1170px;
+    font-size: 12px;
+    
+}
+.header p a{
+    color: #000000;
+}
+
+/* 登陆部分 */
+.singupWarp{
+    width: 100%;
+    height:520px;
+    /* background-color: #7a7f89; */
+}
+.singup{
+    width: 1200px;
+    height:520px ;
+    margin: auto;
+}
+.vancl{
+   width: 1200px;
+   margin-top: 60px;
+}
+.vancl span{
+    font-size: 14px;
+    margin-left: 133px;
+}
+.vancl em{
+    color: #c52025;
+}
+.vancl p{
+   width: 400px;
+    height: 25px;
+    font-size: 22px;
+    color: #979797;
+    margin-left: 720px;
+    /* background-color: aqua; */
+}
+.success {
+    position: absolute;
+    margin-top: -330px;
+    margin-left: 720px;
+}
+.success ul{
+    width: 400px;
+    height: 35px;
+}
+.success li{
+    float: left;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: hsl(0, 0%, 96%);
+    border-right: 1px solid #7a7f89;
+    border: 1px solid #cbcbcb;
+    
+}
+.success li:nth-child(2){
+    border-right: none;
+    border: 1px solid #cbcbcb;
+}
+.success li a{
+    color: #656565;
+    font-size: 16px;
+}
+.inputwarp{
+    width: 400px;
+    height: 310px;
+    /* background-color: beige; */
+    position: absolute;
+    margin-top: -295px;
+    margin-left: 720px;
+    border: 1px solid #cbcbcb;
+    border-top: none;
+    border-bottom: 1px dashed #cbcbcb;
+}
+.inputwarp input{
+    width: 360px;
+    height: 45px;
+    margin: 20px 20px;
+    border: 1px solid #cbcbcb;
+}
+.inputwarp input:nth-child(1){
+    margin-top: 30px;
+}
+.inputwarp span{
+    width:360px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #b42025;
+    margin-left: 320px;
+}
+.inputwarp button{
+    width: 360px;
+    height: 45px;
+    margin: 2px 20px;
+    font-size: 20px;
+    background-color: #b42025;
+    border: none;
+    color: #ffffff;
+}
+.kehu{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 720px;
+    border: 1px solid #cbcbcb;
+    border-top: none;
+}
+.hezuo{
+    width: 360px;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #a4a4a4;
+    font-weight: bold;
+}
+.qinmu  {
+    margin-left:20px ;
+    margin-top: 10px;
+}
+.qinmu img{
+    float: left;
+    height: 43px;
+    margin-right:5px ;
+}
+
+/*图片 */
+/* .leftBn{
+    position: relative;
+    /* overflow: hidden; */
+.singup .imgCon  img{
+    /* width: 465px;
+    height: 352px; */
+    margin-left: 90px;
+}
+.footwarp{
+    width: 100%;
+    height: auto;
+
+}
+.foot{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    border-top: 1px solid #7a7f89;
+}
+.foot p{
+    width: 980px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #999999;
+    margin: 20px 110px;
+}
+.foot span {
+    display: block;
+    width: 980px;
+    text-align: center;
+    margin-left: 340px;
+}
+.foot span img{
+    height: 45px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+
+}
+
+

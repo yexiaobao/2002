@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/singup.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="headerwarp">
+        <div class="header">
+          <img src="../img/logo18546.png" alt="">
+          <p>
+              <a href="">帮助</a>
+          </p>
+        </div>
+    </div>
+
+    <!-- 登录部分 -->
+    <div class="singupWarp">
+         <div class="singup">
+             <div class="vancl">
+                 <p>凡客Vancl登录 <span>没有账户免费<em>注册</em></span></p>
+             </div>
+
+             <div class="leftBn">
+                <div class="imgCon">
+                    <p><img src="../img/newlogo.jpg" alt=""></p>
+                </div>
+                <form action="">
+                    <div class="success">
+                        <ul>
+                            <li>
+                                <a href="">普通登录</a>
+                            </li>
+                            <li>
+                               <a href="">快速登录</a>
+                           </li>
+                        </ul>
+                    </div>
+                    <div class="inputwarp">
+                       <p><input type="text" name="user" class="user" placeholder="请输入用户名"></p> 
+                       <p></p> <input type="text" name="passward" class="password" placeholder="请输入密码"></p>
+                        <span>找回密码</span>
+                        <p><button type="submit" class="submit">登录</button></p>
+                    </div>
+                </form>
+                 
+                
+                
+                <div class="kehu">
+                   <p class="hezuo">使用合作网站账号登录凡客</p>
+                   <p class="qinmu">
+                       <a href=""><img src="../img/kehu.png" alt=""></a>
+                       <a href=""><img src="../img/kehu1.png" alt=""></a>
+                       <a href=""><img src="../img/kehu2.png" alt=""></a>
+                       <a href=""><img src="../img/kehu3.png" alt=""></a>
+                       <a href=""><img src="../img/kehu4.png" alt=""></a>
+                       <a href=""><img src="../img/keu5.png" alt=""></a>
+
+                   </p>
+                </div>
+             </div>
+         </div>
+    </div>
+
+
+    <!-- 尾部 -->
+
+    <div class="footwarp">
+        <div class="foot">
+            <p>Copyright 2007 - 2020 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</p>
+            <span>
+                <a href=""><img src="../img/kehu6.png" alt=""></a>
+                <a href=""><img src="../img/kehu7.png" alt=""></a>
+                <a href=""><img src="../img/kehu8.png" alt=""></a>
+                <a href=""><img src="../img/kehu10.png" alt=""></a>
+            </span>
+        </div>
+    </div>
+
+
+    <script>
+      var from=document.querySelector("form");
+      var  list=Array.from(document.querySelectorAll("input"));
+      var button=document.querySelector("button")
+      list.pop();
+      var arr=[];
+      for(var i=0;i<list.length;i++){
+          arr.push(false);
+      }
+      from.addEventListener("input",inputHanlder);
+      from.addEventListener("input",inputHanlder);
+
+      function  inputHanlder(e){
+            //    console.log(e.target)
+            if(e.type=="input"){
+                var index=list.indexOf(e.target);
+                var bool=getVerify(index,e.target.value);
+                if(bool){
+                    e.target.nextElemSibling.tetxContent="正确";
+                    e.target.nextElemSibling.style="green";
+                }
+                else{red
+                    e.target.nextElemSibling.tetxContent="错误";
+                    e.target.nextElemSibling.style="red";
+                }
+            }
+      }
+
+        
+
+
+    
+    </script>
+</body>
+</html>

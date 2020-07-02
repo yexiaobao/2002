@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "661808",
+      "name": "七天",
+      "font_class": "qitian",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "9444739",
+      "name": "喇叭",
+      "font_class": "lababeifen",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "10332890",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e50b",
+      "unicode_decimal": 58635
+    }
+  ]
+}
