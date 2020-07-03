@@ -303,20 +303,22 @@
 
 .StepWarp{
     width: 1200px;
-    height: 600px;
+    height: 470px;
     margin: auto;
-    background-color: aqua;
+    /* background-color: aqua; */
+    border-bottom: 1px solid #e5e6e6;
+    margin-top: 20px;
 }
 .stapLeft{
     width: 634px;
-    height: 600px;
-    background-color: bisque;
+    height: 470px;
+    /* background-color: bisque; */
     float: left;
 }
 .stepRight{
     width: 561px;
-    height: 600px;
-    background-color: blue;
+    height: 470px;
+    /* background-color: blue; */
     float: left;
     /* margin-left: 5px; */
 }
@@ -327,7 +329,7 @@
     height: 56px;
     font-size: 12px;
     color: #a10000;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 .price span{
     font-size: 24px;
@@ -348,7 +350,7 @@
 .jingling{
     width: 561px;
     height: 100px;
-    background-color: #b81b22;
+    /* background-color: #b81b22; */
     float:right;
 }
 .jingling .color{
@@ -398,7 +400,7 @@
     width: 561px;
     height: 31px;
     line-height: 31px;
-    background-color: brown;
+    /* background-color: brown; */
 }
 .chima P{
     float: left;
@@ -411,17 +413,21 @@
     color: #333333;
     
 }
+/* .chima p:nth-child(1){
+    padding-right: px;
+} */
 .chima P:nth-child(1) {
     width: 36px ;
-    height: 22px;
+    height: 24px;
     border: none;
     font-size: 12px;
     color: #333333;
+    /* padding-right: 2px; */
 }
 .selects{
     width: 561px;
     height: 35px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 select{
     width: 53px;
@@ -437,7 +443,7 @@ select{
 .yixuan {
     width: 400px;
     height: 37px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     font-size: 12px;
     color: #333333;
 }
@@ -495,7 +501,38 @@ select{
  }
  .youhuiti h4{
      width: 400px;
-     height: 5px;
+     height: 24px;
     font-style: 12px;
+    /* background-color: bisque; */
+    text-align: center;
+    color: #a20000;
  }
-
+ .youhuiti h4 span{
+     margin-right: 10px;
+     margin-left: 10px;
+ }
+ .youhuiti P{
+     width: 400px;
+     height: 24px;
+ }
+ .youhuiti p {
+     color: #666666;
+ }
+.youhuiti p span{
+    width: 60px;
+    height: 16px;
+    background-color: #B81c22;
+    color: #fff;
+    font-size: 12px;
+}
+.youhuiti h5 img {
+    width: 400px;
+    height: 1px;
+}
+.youhuiti  p em {
+    width: 58px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 10%;
+    color: #fff;
+}

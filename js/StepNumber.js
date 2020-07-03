@@ -1,16 +1,16 @@
-import Utils from "../Utils.js";
- 
+import Utils from "./Utils.js";
+
 export default class StepNumber{
     elem;
     input;
     ids;
     step = 1;
-  
-    constructor() {
  
+    constructor() {
+
         this.elem = this.createElem();
     }
- 
+
     createElem() {
         let div = Utils.ce("div", {
             width: "80px",
@@ -61,7 +61,7 @@ export default class StepNumber{
         }
         parent.appendChild(this.elem);
     }
- 
+
     inputHandler(e) {
         this.input.value = this.input.value.replace(/\D/g, "");
         // 节流
@@ -72,7 +72,7 @@ export default class StepNumber{
             this.setStep(this.input.value);
         }, 500);
     }
- 
+
     clickHandler(e) {
         if (e.currentTarget.textContent === "-") {
             this.setStep(this.step - 1);
@@ -80,7 +80,7 @@ export default class StepNumber{
             this.setStep(this.step + 1);
         }
     }
- 
+
     setStep(value) {
         value = Number(value);
         if (value < 1) value = 1;

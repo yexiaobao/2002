@@ -6,7 +6,6 @@
             var  divLists=document.querySelector(".divList");
             var  li=document.querySelectorAll(".divList li")
             listId.addEventListener("mouseenter",mouseHandler);
-
             divLists.addEventListener("mouseleave",mouseoutHandler);
 
             function  mouseHandler(){

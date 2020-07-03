@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/singin.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
     <!-- 注册头部 -->
@@ -16,14 +17,14 @@
 
     <!-- 注册主体 -->
     <div class="cententWarp">
-        <div class="centent">
+        <!-- <div class="centent">
             <ul>
                 <li class="list">
                      <img src="../img/newlogo.jpg" alt="">
                 </li>
                 <li>
                     <div class="zhuce">
-                        <p>注册用户<span>我已经注册，现在就<em><a href="">登录</a></em></span></p>
+                        <p>注册用户<span>我已经注册，现在就<a href="../html/singup.html"><em>登录</em></a></span></p>
                     </div>
                    
                     <form action="">
@@ -47,8 +48,44 @@
 
                 </li>
             </ul>
-        </div>
+        </div> -->
+        <div class="col-sm-4 col-sm-offset-4 box">
+            <form class="form-horizontal" action="http://localhost:4010/signIn.php" method="POST">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">用户名:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="user" id="inputEmail3" placeholder="User">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">密码:</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" name="password" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> 记住账号
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-2">
+                    <button type="submit" class="btn btn-success">登录</button>
+                    
+                  </div>
+                  <div class="col-sm-offset-4 col-sm-2">
+                    <a href="../html/singUp.html"  class="btn btn-default">注册</a>
+                  </div>
+                </div>
+              </form>
+           </div>
+        
     </div>
+     
 
 
     <!-- 尾部 -->
